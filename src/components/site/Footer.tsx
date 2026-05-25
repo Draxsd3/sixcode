@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <img src={logo} alt="SixCode" className="h-10 w-auto mb-5" />
+            <img src={logo} alt="SixCode" className="h-14 w-auto mb-5" />
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
               Desenvolvemos sistemas, automações e soluções com IA para empresas que querem escalar com tecnologia.
             </p>
