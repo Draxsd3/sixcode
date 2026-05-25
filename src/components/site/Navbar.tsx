@@ -26,11 +26,11 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border"
-          : "bg-transparent"
+          ? "bg-background/85 backdrop-blur-xl border-b border-border"
+          : "bg-background/40 backdrop-blur-sm"
       }`}
     >
-      <div className="container mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="container mx-auto px-6 h-24 flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2">
           <img src={logo} alt="SixCode" className="h-12 md:h-14 w-auto" />
         </a>
