@@ -116,15 +116,15 @@
   .shadow-glow { box-shadow: var(--shadow-glow); }
   .shadow-card { box-shadow: var(--shadow-card); }
   .text-gradient {
-    background: linear-gradient(135deg, oklch(0.97 0.005 280), oklch(0.7 0.2 295));
+    background: linear-gradient(135deg, oklch(0.42 0.22 290), oklch(0.58 0.24 295));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
   .grid-pattern {
     background-image:
-      linear-gradient(oklch(0.25 0.03 280 / 0.4) 1px, transparent 1px),
-      linear-gradient(90deg, oklch(0.25 0.03 280 / 0.4) 1px, transparent 1px);
+      linear-gradient(oklch(0.5 0.1 290 / 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(0.5 0.1 290 / 0.08) 1px, transparent 1px);
     background-size: 48px 48px;
   }
   .animate-fade-up {
