@@ -1,40 +1,35 @@
 import { Code2, Workflow, Plug, Brain, LayoutDashboard, Rocket } from "lucide-react";
 
 const items = [
-  { icon: Code2, title: "Sistemas Web", desc: "Plataformas web completas, performáticas e escaláveis sob medida para o seu negócio." },
-  { icon: Workflow, title: "Automações de Processos", desc: "Eliminamos tarefas manuais e repetitivas com fluxos automatizados inteligentes." },
-  { icon: Plug, title: "Integrações com APIs", desc: "Conectamos sistemas, ERPs, CRMs e ferramentas com integrações robustas." },
-  { icon: Brain, title: "Inteligência Artificial", desc: "Aplicamos IA real para gerar valor, otimizar decisões e acelerar operações." },
-  { icon: LayoutDashboard, title: "Dashboards Gerenciais", desc: "Painéis com indicadores em tempo real para gestão orientada por dados." },
-  { icon: Rocket, title: "Landing Pages & Plataformas", desc: "Experiências digitais modernas, conversoras e alinhadas à sua marca." },
+  { icon: Code2, title: "Sistemas Web", desc: "Plataformas completas, performáticas e escaláveis sob medida." },
+  { icon: Workflow, title: "Automações", desc: "Eliminamos tarefas manuais com fluxos inteligentes." },
+  { icon: Plug, title: "Integrações", desc: "Conectamos ERPs, CRMs e ferramentas com APIs robustas." },
+  { icon: Brain, title: "Inteligência Artificial", desc: "IA aplicada para otimizar decisões e acelerar operações." },
+  { icon: LayoutDashboard, title: "Dashboards", desc: "Painéis com indicadores em tempo real para gestão ágil." },
+  { icon: Rocket, title: "Websites & Landing Pages", desc: "Experiências digitais modernas e alinhadas à sua marca." },
 ];
 
 export function Solutions() {
   return (
-    <section id="solucoes" className="py-24 lg:py-32 relative">
+    <section id="solucoes" className="py-20 lg:py-28">
       <div className="container mx-auto px-6">
-        <div className="max-w-2xl mb-16">
-          <span className="font-mono text-xs uppercase tracking-widest text-primary">// Soluções</span>
-          <h2 className="text-4xl md:text-5xl mt-4 mb-5">
+        <div className="max-w-xl mb-14">
+          <h2 className="text-3xl md:text-4xl mb-4">
             Tecnologia sob medida para cada desafio
           </h2>
-          <p className="text-muted-foreground text-lg">
-            Construímos soluções digitais que resolvem problemas reais e geram impacto mensurável.
+          <p className="text-muted-foreground">
+            Soluções digitais que resolvem problemas reais e geram impacto.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
           {items.map(({ icon: Icon, title, desc }) => (
-            <div
-              key={title}
-              className="group relative p-7 rounded-2xl bg-surface border border-border hover:border-primary/50 transition-all duration-300 shadow-card hover:shadow-elegant overflow-hidden"
-            >
-              <div className="absolute -top-12 -right-12 w-32 h-32 bg-primary/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative">
-                <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center mb-5 shadow-elegant">
-                  <Icon className="text-primary-foreground" size={22} />
-                </div>
-                <h3 className="font-display text-2xl mb-2">{title}</h3>
+            <div key={title} className="flex gap-4">
+              <div className="shrink-1 mt-0">
+                <Icon size={20} className="text-primary" strokeWidth={1.5} />
+              </div>
+              <div>
+                <h3 className="font-display text-xl mb-1">{title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
               </div>
             </div>
