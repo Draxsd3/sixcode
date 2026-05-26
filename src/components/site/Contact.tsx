@@ -108,7 +108,7 @@ export function Contact() {
 
               <form
                 onSubmit={onSubmit}
-                className="relative rounded-2xl bg-background/80 backdrop-blur-xl border border-white/10 p-8 md:p-10 space-y-5 overflow-hidden"
+                className="relative rounded-2xl bg-background/80 backdrop-blur-xl border border-white/10 p-5 sm:p-8 md:p-10 space-y-5 overflow-hidden"
               >
                 {/* cursor spotlight */}
                 <div
