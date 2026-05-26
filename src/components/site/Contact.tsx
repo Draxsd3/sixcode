@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { ArrowRight, Mail, MessageCircle, Sparkles } from "lucide-react";
+import { ArrowRight, Mail, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
 export function Contact() {
