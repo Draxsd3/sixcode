@@ -8,8 +8,13 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="processo" className="py-24 lg:py-32 bg-surface border-b border-border">
-      <div className="container mx-auto px-6">
+    <section
+      id="processo"
+      className="relative py-24 lg:py-32 bg-surface border-b border-border overflow-hidden"
+    >
+      <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" aria-hidden />
+
+      <div className="container relative mx-auto px-6">
         <div className="max-w-2xl mb-16">
           <span className="eyebrow mb-5">Processo</span>
           <h2 className="text-4xl md:text-5xl mt-5 mb-5">Como a SixCode trabalha</h2>
@@ -22,9 +27,11 @@ export function Process() {
           {steps.map((s) => (
             <div
               key={s.n}
-              className="grid grid-cols-[auto_1fr] md:grid-cols-[120px_240px_1fr] gap-6 md:gap-10 py-8 border-b border-border items-baseline"
+              className="group grid grid-cols-[auto_1fr] md:grid-cols-[140px_280px_1fr] gap-6 md:gap-10 py-8 border-b border-border items-baseline transition-colors hover:bg-background/60 -mx-4 px-4 rounded-sm"
             >
-              <span className="font-mono text-xs tracking-widest text-primary">{s.n}</span>
+              <span className="font-display text-4xl md:text-5xl text-primary/30 group-hover:text-primary transition-colors tabular-nums">
+                {s.n}
+              </span>
               <h3 className="text-2xl md:text-3xl">{s.title}</h3>
               <p className="text-muted-foreground leading-relaxed col-span-2 md:col-span-1 max-w-xl">
                 {s.desc}

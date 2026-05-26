@@ -19,13 +19,17 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border rounded-md overflow-hidden">
           {projects.map((p) => (
-            <article key={p.title} className="bg-background p-8 group hover:bg-surface transition-colors">
-              <div className="font-mono text-xs uppercase tracking-widest text-primary mb-6">
+            <article
+              key={p.title}
+              className="bg-background p-8 group hover:bg-surface transition-colors relative overflow-hidden cursor-pointer"
+            >
+              <div className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-primary to-accent scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+              <div className="font-mono text-xs uppercase tracking-widest text-primary mb-6 inline-block px-2.5 py-1 bg-primary/10 rounded">
                 {p.tag}
               </div>
-              <h3 className="text-2xl mb-3">{p.title}</h3>
+              <h3 className="text-2xl mb-3 group-hover:text-primary transition-colors">{p.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
             </article>
           ))}
