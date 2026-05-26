@@ -111,7 +111,7 @@ export function About() {
               <span className="w-6 h-px bg-primary" />
               <span>quem somos</span>
             </div>
-            <p className="text-3xl md:text-4xl leading-[1.1] tracking-tight text-foreground mb-8">
+            <p className="text-2xl sm:text-3xl md:text-4xl leading-[1.15] tracking-tight text-foreground mb-8">
               A SixCode nasceu para transformar{" "}
               <span className="text-muted-foreground/60">ideias</span> em{" "}
               <span className="relative inline-block">
