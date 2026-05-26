@@ -163,11 +163,11 @@ export function Process() {
                         isActive ? "opacity-100" : "opacity-50 group-hover:opacity-80"
                       }`}
                     >
-                      <div className="flex items-baseline gap-4 mb-2">
+                      <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-2">
                         <span className="font-mono text-xs text-primary tabular-nums tracking-widest">
                           {s.n}
                         </span>
-                        <h3 className="text-3xl md:text-4xl tracking-tight">
+                        <h3 className="text-2xl sm:text-3xl md:text-4xl tracking-tight">
                           {s.title}
                         </h3>
                         <span className="ml-auto font-mono text-[10px] uppercase tracking-widest text-muted-foreground hidden md:inline">
