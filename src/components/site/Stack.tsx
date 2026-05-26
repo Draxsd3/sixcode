@@ -141,7 +141,7 @@ export function Stack() {
                 </span>
               </div>
 
-              <p className="text-2xl md:text-3xl font-semibold leading-snug mb-10 max-w-xl">
+              <p className="text-xl sm:text-2xl md:text-3xl font-semibold leading-snug mb-10 max-w-xl">
                 {groups[active].tagline}
               </p>
 
