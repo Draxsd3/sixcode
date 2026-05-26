@@ -51,12 +51,12 @@ export function Process() {
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-primary/10 blur-[140px] pointer-events-none" aria-hidden />
 
       <div className="container relative mx-auto px-6">
-        <div className="max-w-3xl mb-20">
+        <div className="max-w-3xl mb-16 lg:mb-20">
           <span className="eyebrow mb-6">processo</span>
-          <h2 className="text-5xl md:text-7xl headline-fade mt-6 mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl headline-fade mt-6 mb-6 tracking-tight">
             Como a SixCode trabalha
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Cinco fases, um único objetivo: entregar software que move o
             ponteiro do seu negócio.
           </p>
