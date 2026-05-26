@@ -3,20 +3,20 @@ import { Mail, MessageCircle, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-background">
-      <div className="container mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-10">
+    <footer className="bg-background relative overflow-hidden border-t border-border">
+      <div className="container mx-auto px-6 pt-20 pb-8">
+        <div className="grid md:grid-cols-4 gap-10 mb-16">
           <div className="md:col-span-2">
-            <img src={logo} alt="SixCode" className="h-12 w-auto mb-5" />
+            <img src={logo} alt="SixCode" className="h-10 w-auto mb-5" />
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
-              Sistemas, automações e soluções com IA sob medida para empresas
-              que querem escalar com tecnologia.
+              O padrão moderno para times que precisam de tecnologia sob medida.
+              Sistemas, automações e IA para o seu negócio.
             </p>
           </div>
 
           <div>
-            <h4 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-4">Links</h4>
-            <ul className="space-y-2.5 text-sm">
+            <h4 className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-5">Produto</h4>
+            <ul className="space-y-3 text-sm">
               {[
                 { href: "#solucoes", label: "Soluções" },
                 { href: "#processo", label: "Processo" },
@@ -24,7 +24,7 @@ export function Footer() {
                 { href: "#sobre", label: "Sobre" },
               ].map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="text-foreground hover:text-primary transition-colors">
+                  <a href={l.href} className="text-foreground/80 hover:text-foreground transition-colors">
                     {l.label}
                   </a>
                 </li>
@@ -33,8 +33,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-4">Contato</h4>
-            <ul className="space-y-2.5 text-sm text-foreground">
+            <h4 className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-5">Contato</h4>
+            <ul className="space-y-3 text-sm text-foreground/80">
               <li className="flex items-center gap-2">
                 <Mail size={14} className="text-primary" />
                 <span>contato@sixcode.com.br</span>
@@ -51,9 +51,21 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
           <p>© 2026 SixCode. Todos os direitos reservados.</p>
-          <p className="font-mono">{"</> built with precision"}</p>
+          <div className="flex items-center gap-4 font-mono">
+            <span className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+              Todos os sistemas OK
+            </span>
+            <span>BR · UTC-3</span>
+          </div>
+        </div>
+
+        <div className="relative mt-16 -mb-8 select-none pointer-events-none" aria-hidden>
+          <h2 className="text-center text-[18vw] md:text-[14vw] font-display font-bold tracking-tighter leading-none headline-fade opacity-80">
+            SIXCODE
+          </h2>
         </div>
       </div>
     </footer>
