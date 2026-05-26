@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="bg-background relative overflow-hidden border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 pt-16 sm:pt-20 pb-8">
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-16">
-          <div className="md:col-span-2">
+          <div className="sm:col-span-2">
             <span className="inline-flex font-display font-bold text-3xl tracking-tight chrome-text leading-none mb-5">
               SIXCODE
             </span>
