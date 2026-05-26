@@ -23,11 +23,11 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 perspective-deep">
           {projects.map((p) => (
             <article
               key={p.title}
-              className="group relative card-surface rounded-2xl p-7 overflow-hidden cursor-pointer hover:border-primary/40 transition-all"
+              className="tilt-card shine group relative card-surface rounded-2xl p-7 overflow-hidden cursor-pointer hover:border-primary/40 transition-all"
             >
               <div className="flex items-start justify-between mb-8">
                 <div className="font-mono text-[10px] uppercase tracking-widest text-primary px-2 py-1 rounded bg-primary/10">
