@@ -40,13 +40,13 @@ export function Solutions() {
     <section id="solucoes" className="relative py-24 lg:py-36 border-b border-border overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/8 blur-[120px] rounded-full pointer-events-none" aria-hidden />
 
-      <div className="container relative mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+      <div className="container relative mx-auto px-4 sm:px-6">
+        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <span className="eyebrow mb-6">soluções</span>
-          <h2 className="text-5xl md:text-7xl headline-fade mt-6 mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl headline-fade mt-6 mb-6 tracking-tight">
             Feito para times modernos
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
+          <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
             A SixCode é moldada pelas práticas e princípios que distinguem
             equipes de classe mundial: foco implacável, execução rápida e
             compromisso com a qualidade do código.

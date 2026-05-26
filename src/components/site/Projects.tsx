@@ -12,13 +12,13 @@ const projects = [
 export function Projects() {
   return (
     <section id="projetos" className="py-24 lg:py-36 border-b border-border relative overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="max-w-3xl mb-20">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-3xl mb-16 lg:mb-20">
           <span className="eyebrow mb-6">projetos</span>
-          <h2 className="text-5xl md:text-7xl headline-fade mt-6 mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl headline-fade mt-6 mb-6 tracking-tight">
             Casos de uso reais
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Exemplos de soluções que a SixCode pode construir para o seu negócio.
           </p>
         </div>

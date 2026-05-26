@@ -3,9 +3,9 @@ import { Mail, MessageCircle, MapPin } from "lucide-react";
 export function Footer() {
   return (
     <footer className="bg-background relative overflow-hidden border-t border-border">
-      <div className="container mx-auto px-6 pt-20 pb-8">
-        <div className="grid md:grid-cols-4 gap-10 mb-16">
-          <div className="md:col-span-2">
+      <div className="container mx-auto px-4 sm:px-6 pt-16 sm:pt-20 pb-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-16">
+          <div className="sm:col-span-2">
             <span className="inline-flex font-display font-bold text-3xl tracking-tight chrome-text leading-none mb-5">
               SIXCODE
             </span>
@@ -52,9 +52,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-muted-foreground">
           <p>© 2026 SixCode. Todos os direitos reservados.</p>
-          <div className="flex items-center gap-4 font-mono">
+          <div className="flex flex-wrap items-center gap-4 font-mono">
             <span className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
               Todos os sistemas OK

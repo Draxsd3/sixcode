@@ -4,37 +4,37 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden"
+      className="relative pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-32 overflow-hidden"
     >
       {/* background fx */}
       <div className="absolute inset-0 radial-purple pointer-events-none" aria-hidden />
       <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none" aria-hidden />
       <div
-        className="absolute top-20 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-primary/20 blur-[120px] rounded-full pointer-events-none animate-blob"
+        className="absolute top-20 left-1/2 -translate-x-1/2 w-[700px] max-w-[120vw] h-[400px] bg-primary/20 blur-[120px] rounded-full pointer-events-none animate-blob"
         aria-hidden
       />
 
-      <div className="container relative mx-auto px-6">
+      <div className="container relative mx-auto px-4 sm:px-6">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto animate-fade-up">
-          <a href="#solucoes" className="pill mb-8 group">
-            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            <span className="text-muted-foreground">SixCode/overview</span>
+          <a href="#solucoes" className="pill mb-8 group max-w-full flex-wrap justify-center text-center">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse shrink-0" />
+            <span className="text-muted-foreground hidden sm:inline">SixCode/overview</span>
             <span className="text-foreground">Plataformas sob medida com IA</span>
-            <ArrowRight size={12} className="text-muted-foreground group-hover:translate-x-0.5 transition-transform" />
+            <ArrowRight size={12} className="text-muted-foreground group-hover:translate-x-0.5 transition-transform shrink-0" />
           </a>
 
-          <h1 className="text-6xl md:text-8xl lg:text-[7.5rem] headline-fade mb-8">
+          <h1 className="text-[clamp(2.5rem,11vw,7.5rem)] headline-fade mb-8 leading-[0.95] tracking-tight">
             O novo padrão para
             <br />
             construir software
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-10">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-10 px-2">
             Conheça o sistema para desenvolvimento moderno.
             Sistemas, automações e inteligência artificial sob medida para o seu negócio.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-3 w-full">
             <a
               href="#contato"
               className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-background font-medium hover:bg-foreground/90 transition-all"
@@ -44,10 +44,11 @@ export function Hero() {
             </a>
             <a
               href="#solucoes"
-              className="group inline-flex items-center gap-2 px-5 py-3 rounded-full border border-border bg-surface/60 backdrop-blur hover:border-primary/40 text-foreground text-sm transition-all"
+              className="group inline-flex items-center gap-2 px-5 py-3 rounded-full border border-border bg-surface/60 backdrop-blur hover:border-primary/40 text-foreground text-xs sm:text-sm transition-all max-w-full"
             >
-              <span className="text-primary">Novo:</span> agente de IA para WhatsApp
-              <ArrowUpRight size={14} className="text-muted-foreground" />
+              <span className="text-primary">Novo:</span>
+              <span className="truncate">agente de IA para WhatsApp</span>
+              <ArrowUpRight size={14} className="text-muted-foreground shrink-0" />
             </a>
           </div>
         </div>
@@ -105,13 +106,14 @@ function DashboardMockup() {
         </aside>
 
         {/* main */}
-        <main className="col-span-12 md:col-span-9 p-5 md:p-7 space-y-5">
+        <main className="col-span-12 md:col-span-9 p-4 md:p-7 space-y-4 md:space-y-5">
           {/* KPIs */}
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Kpi label="Automações ativas" value="248" delta="+12%" />
             <Kpi label="Tempo economizado" value="1.4k h" delta="+24%" />
             <Kpi label="Integrações" value="36" delta="+3" />
           </div>
+
 
           {/* chart */}
           <div className="rounded-xl border border-border bg-surface/40 p-4">

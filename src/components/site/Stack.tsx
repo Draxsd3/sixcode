@@ -47,16 +47,16 @@ export function Stack() {
         aria-hidden
       />
 
-      <div className="container relative mx-auto px-6">
+      <div className="container relative mx-auto px-4 sm:px-6">
         {/* header */}
-        <div className="flex items-end justify-between mb-16 gap-6 flex-wrap">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 lg:mb-16 gap-6">
           <div className="max-w-2xl">
             <span className="eyebrow mb-6">stack</span>
-            <h2 className="text-5xl md:text-6xl headline-fade mt-6">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl headline-fade mt-6 tracking-tight">
               Ferramentas modernas, decisões pragmáticas
             </h2>
           </div>
-          <p className="text-muted-foreground max-w-sm">
+          <p className="text-muted-foreground max-w-sm text-sm sm:text-base">
             Escolhemos a stack certa para cada projeto. Sem hype, sem trava.
             Só o que entrega valor rápido e escala depois.
           </p>
@@ -73,7 +73,7 @@ export function Stack() {
                   key={g.label}
                   onMouseEnter={() => setActive(i)}
                   onClick={() => setActive(i)}
-                  className={`relative text-left p-6 border-b border-border/60 last:border-b-0 lg:w-full min-w-[200px] transition-colors ${
+                  className={`relative text-left p-4 lg:p-6 border-b border-border/60 last:border-b-0 lg:w-full min-w-[160px] lg:min-w-0 shrink-0 transition-colors ${
                     isActive
                       ? "bg-primary/5"
                       : "hover:bg-surface/40"
@@ -118,7 +118,7 @@ export function Stack() {
           </div>
 
           {/* spotlight */}
-          <div className="bg-background p-8 lg:p-12 relative overflow-hidden min-h-[420px]">
+          <div className="bg-background p-6 sm:p-8 lg:p-12 relative overflow-hidden min-h-[420px]">
             {/* grid bg */}
             <div
               className="absolute inset-0 opacity-[0.04] pointer-events-none"
@@ -141,7 +141,7 @@ export function Stack() {
                 </span>
               </div>
 
-              <p className="text-2xl md:text-3xl font-semibold leading-snug mb-10 max-w-xl">
+              <p className="text-xl sm:text-2xl md:text-3xl font-semibold leading-snug mb-10 max-w-xl">
                 {groups[active].tagline}
               </p>
 

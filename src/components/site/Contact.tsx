@@ -38,15 +38,15 @@ export function Contact() {
   };
 
   return (
-    <section id="contato" className="py-24 lg:py-32 border-b border-border relative overflow-hidden">
+    <section id="contato" className="py-20 sm:py-24 lg:py-32 border-b border-border relative overflow-hidden">
       {/* ambient glow */}
-      <div className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-primary/10 blur-[120px]" />
+      <div className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] max-w-[120vw] h-[700px] rounded-full bg-primary/10 blur-[120px]" />
 
-      <div className="container mx-auto px-6 relative">
+      <div className="container mx-auto px-4 sm:px-6 relative">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-5">
             <span className="eyebrow mb-5">Contato</span>
-            <h2 className="text-4xl md:text-5xl mt-5 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl mt-5 mb-6 tracking-tight">
               Vamos conversar sobre o seu projeto
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10">
@@ -108,7 +108,7 @@ export function Contact() {
 
               <form
                 onSubmit={onSubmit}
-                className="relative rounded-2xl bg-background/80 backdrop-blur-xl border border-white/10 p-8 md:p-10 space-y-5 overflow-hidden"
+                className="relative rounded-2xl bg-background/80 backdrop-blur-xl border border-white/10 p-5 sm:p-8 md:p-10 space-y-5 overflow-hidden"
               >
                 {/* cursor spotlight */}
                 <div

@@ -42,9 +42,9 @@ export function About() {
       />
       <div className="absolute inset-0 grid-bg opacity-[0.08] pointer-events-none" aria-hidden />
 
-      <div className="container relative mx-auto px-6">
+      <div className="container relative mx-auto px-4 sm:px-6">
         {/* eyebrow row */}
-        <div className="flex items-end justify-between mb-14 gap-6">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12 lg:mb-14 gap-4 sm:gap-6">
           <div>
             <span className="eyebrow mb-4">sobre · manifesto</span>
             <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mt-3">
@@ -58,8 +58,8 @@ export function About() {
         </div>
 
         {/* HERO — split paper vs produção */}
-        <div className="relative mb-24 lg:mb-32">
-          <h2 className="text-[clamp(2.8rem,10vw,9.5rem)] leading-[0.85] tracking-[-0.05em] font-semibold">
+        <div className="relative mb-20 lg:mb-32">
+          <h2 className="text-[clamp(2.2rem,9vw,9.5rem)] leading-[0.9] tracking-[-0.04em] font-semibold break-words">
             <span className="block text-foreground/15">tiramos</span>
             <span className="block relative">
               <span className="italic font-display headline-fade">ideias</span>
@@ -111,7 +111,7 @@ export function About() {
               <span className="w-6 h-px bg-primary" />
               <span>quem somos</span>
             </div>
-            <p className="text-3xl md:text-4xl leading-[1.1] tracking-tight text-foreground mb-8">
+            <p className="text-2xl sm:text-3xl md:text-4xl leading-[1.15] tracking-tight text-foreground mb-8">
               A SixCode nasceu para transformar{" "}
               <span className="text-muted-foreground/60">ideias</span> em{" "}
               <span className="relative inline-block">
@@ -139,8 +139,8 @@ export function About() {
                 <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
                   0{i + 1}
                 </div>
-                <div className="flex items-baseline gap-4">
-                  <span className="text-5xl md:text-6xl font-semibold tracking-tight text-foreground group-hover:text-primary transition-colors">
+                <div className="flex items-baseline gap-3 sm:gap-4 flex-wrap justify-end">
+                  <span className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-foreground group-hover:text-primary transition-colors">
                     {s.value}
                   </span>
                   <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
