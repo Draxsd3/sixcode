@@ -52,7 +52,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between gap-4 text-xs text-muted-foreground">
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-muted-foreground">
           <p>© 2026 SixCode. Todos os direitos reservados.</p>
           <div className="flex items-center gap-4 font-mono">
             <span className="flex items-center gap-2">
