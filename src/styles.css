@@ -254,3 +254,25 @@
     50% { opacity: 0.4; }
   }
 }
+
+@layer utilities {
+  .chrome-text {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #e8e8ea 18%,
+      #a8a9ad 38%,
+      #6e6f74 50%,
+      #2a2b2f 62%,
+      #8a8b90 78%,
+      #d8d9dc 92%,
+      #ffffff 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.04);
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.6));
+  }
+}
