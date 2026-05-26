@@ -53,11 +53,11 @@ export function Solutions() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 perspective-deep">
           {items.map(({ icon: Icon, title, desc }) => (
             <article
               key={title}
-              className="group relative card-surface rounded-2xl p-6 overflow-hidden hover:border-primary/40 transition-all duration-500"
+              className="tilt-card shine group relative card-surface rounded-2xl p-6 overflow-hidden hover:border-primary/40 transition-all duration-500"
             >
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/20 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 

@@ -52,10 +52,12 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Dashboard Mockup */}
-        <div className="relative mt-20 lg:mt-28 max-w-6xl mx-auto animate-fade-in" style={{ animationDelay: "300ms" }}>
-          <div className="absolute -inset-x-20 -top-20 -bottom-10 bg-primary/10 blur-3xl pointer-events-none" aria-hidden />
-          <DashboardMockup />
+        {/* Dashboard Mockup — 3D tilt */}
+        <div className="relative mt-20 lg:mt-28 max-w-6xl mx-auto animate-fade-in perspective-deep tilt-3d-hover" style={{ animationDelay: "300ms" }}>
+          <div className="absolute -inset-x-20 -top-20 -bottom-10 bg-primary/15 blur-3xl pointer-events-none" aria-hidden />
+          <div className="tilt-3d">
+            <DashboardMockup />
+          </div>
         </div>
       </div>
     </section>
