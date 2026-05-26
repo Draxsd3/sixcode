@@ -106,13 +106,14 @@ function DashboardMockup() {
         </aside>
 
         {/* main */}
-        <main className="col-span-12 md:col-span-9 p-5 md:p-7 space-y-5">
+        <main className="col-span-12 md:col-span-9 p-4 md:p-7 space-y-4 md:space-y-5">
           {/* KPIs */}
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Kpi label="Automações ativas" value="248" delta="+12%" />
             <Kpi label="Tempo economizado" value="1.4k h" delta="+24%" />
             <Kpi label="Integrações" value="36" delta="+3" />
           </div>
+
 
           {/* chart */}
           <div className="rounded-xl border border-border bg-surface/40 p-4">
