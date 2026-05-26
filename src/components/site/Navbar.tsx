@@ -29,8 +29,11 @@ export function Navbar() {
               : "bg-transparent"
           }`}
         >
-          <a href="#inicio" className="flex items-center shrink-0">
-            <span className="font-display font-bold text-xl tracking-tight text-foreground">SIXCODE</span>
+          <a href="#inicio" className="flex items-center shrink-0 group">
+            <span className="relative font-display font-bold text-xl tracking-tight text-foreground px-3 py-1.5 rounded-xl bg-black border border-white/10 shadow-[0_0_30px_-5px_rgba(0,0,0,0.8),0_0_60px_-10px_rgba(120,50,200,0.15)] transition-all duration-500 group-hover:shadow-[0_0_40px_-5px_rgba(0,0,0,1),0_0_80px_-10px_rgba(120,50,200,0.25)] group-hover:border-white/20">
+              <span className="relative z-10">SIXCODE</span>
+              <span className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/[0.03] to-transparent pointer-events-none" />
+            </span>
           </a>
 
           <nav className="hidden lg:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
