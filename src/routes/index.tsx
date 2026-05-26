@@ -4,25 +4,29 @@ import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { LogoMarquee } from "@/components/site/LogoMarquee";
 import { Solutions } from "@/components/site/Solutions";
+import { Stack } from "@/components/site/Stack";
 import { Process } from "@/components/site/Process";
 import { Projects } from "@/components/site/Projects";
+import { Pricing } from "@/components/site/Pricing";
+import { Testimonials } from "@/components/site/Testimonials";
 import { About } from "@/components/site/About";
+import { CTASection } from "@/components/site/CTASection";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "SixCode — Sistemas, automações e IA sob medida" },
+      { title: "SixCode — Software, automações e IA para startups que querem escalar" },
       {
         name: "description",
         content:
-          "A SixCode desenvolve sistemas, automações e soluções com IA para empresas que querem escalar com tecnologia, eficiência e inteligência.",
+          "Startup de tecnologia que entrega MVPs, sistemas sob medida, automações e IA. Do diagnóstico ao deploy, com squad dedicado e código próprio.",
       },
-      { property: "og:title", content: "SixCode — Tecnologia que escala negócios" },
+      { property: "og:title", content: "SixCode — Tecnologia que escala startups" },
       {
         property: "og:description",
-        content: "Sistemas web, automações, integrações e IA sob medida.",
+        content: "MVPs, sistemas, automações e IA sob medida. Diagnóstico gratuito.",
       },
     ],
   }),
@@ -37,9 +41,13 @@ function Index() {
         <Hero />
         <LogoMarquee />
         <Solutions />
+        <Stack />
         <Process />
         <Projects />
+        <Testimonials />
+        <Pricing />
         <About />
+        <CTASection />
         <Contact />
       </main>
       <Footer />
