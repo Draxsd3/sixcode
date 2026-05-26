@@ -120,19 +120,8 @@ export function Contact() {
                   }}
                 />
 
-                {/* floating header chip */}
-                <div
-                  className="flex items-center justify-between mb-2"
-                  style={{ transform: "translateZ(40px)" }}
-                >
-                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-xs font-mono uppercase tracking-wider text-primary">
-                    <Sparkles size={12} />
-                    Novo projeto
-                  </div>
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                    /form_v3
-                  </span>
-                </div>
+
+
 
                 <div className="grid md:grid-cols-2 gap-5" style={{ transform: "translateZ(30px)" }}>
                   <Field name="name" label="Nome" required />
