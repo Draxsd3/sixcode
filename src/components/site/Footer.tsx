@@ -6,7 +6,10 @@ export function Footer() {
       <div className="container mx-auto px-6 pt-20 pb-8">
         <div className="grid md:grid-cols-4 gap-10 mb-16">
           <div className="md:col-span-2">
-            <span className="font-display font-bold text-2xl tracking-tight text-foreground block mb-5">SIXCODE</span>
+            <span className="inline-flex font-display font-bold text-2xl tracking-tight text-foreground px-4 py-2 rounded-2xl bg-black border border-white/10 shadow-[0_0_30px_-5px_rgba(0,0,0,0.8),0_0_60px_-10px_rgba(120,50,200,0.15)] mb-5">
+              <span className="relative z-10">SIXCODE</span>
+              <span className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/[0.03] to-transparent pointer-events-none" />
+            </span>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
               O padrão moderno para times que precisam de tecnologia sob medida.
               Sistemas, automações e IA para o seu negócio.
