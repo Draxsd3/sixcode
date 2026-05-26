@@ -5,8 +5,6 @@ const links = [
   { href: "#solucoes", label: "Soluções" },
   { href: "#stack", label: "Stack" },
   { href: "#processo", label: "Processo" },
-  { href: "#planos", label: "Planos" },
-  { href: "#depoimentos", label: "Clientes" },
 ];
 
 export function Navbar() {

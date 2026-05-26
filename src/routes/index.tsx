@@ -7,8 +7,6 @@ import { Solutions } from "@/components/site/Solutions";
 import { Stack } from "@/components/site/Stack";
 import { Process } from "@/components/site/Process";
 import { Projects } from "@/components/site/Projects";
-import { Pricing } from "@/components/site/Pricing";
-import { Testimonials } from "@/components/site/Testimonials";
 import { About } from "@/components/site/About";
 import { CTASection } from "@/components/site/CTASection";
 import { Contact } from "@/components/site/Contact";
@@ -44,8 +42,6 @@ function Index() {
         <Stack />
         <Process />
         <Projects />
-        <Testimonials />
-        <Pricing />
         <About />
         <CTASection />
         <Contact />
