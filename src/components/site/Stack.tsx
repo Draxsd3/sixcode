@@ -118,7 +118,7 @@ export function Stack() {
           </div>
 
           {/* spotlight */}
-          <div className="bg-background p-8 lg:p-12 relative overflow-hidden min-h-[420px]">
+          <div className="bg-background p-6 sm:p-8 lg:p-12 relative overflow-hidden min-h-[420px]">
             {/* grid bg */}
             <div
               className="absolute inset-0 opacity-[0.04] pointer-events-none"
