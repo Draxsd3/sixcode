@@ -47,16 +47,16 @@ export function Stack() {
         aria-hidden
       />
 
-      <div className="container relative mx-auto px-6">
+      <div className="container relative mx-auto px-4 sm:px-6">
         {/* header */}
-        <div className="flex items-end justify-between mb-16 gap-6 flex-wrap">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 lg:mb-16 gap-6">
           <div className="max-w-2xl">
             <span className="eyebrow mb-6">stack</span>
-            <h2 className="text-5xl md:text-6xl headline-fade mt-6">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl headline-fade mt-6 tracking-tight">
               Ferramentas modernas, decisões pragmáticas
             </h2>
           </div>
-          <p className="text-muted-foreground max-w-sm">
+          <p className="text-muted-foreground max-w-sm text-sm sm:text-base">
             Escolhemos a stack certa para cada projeto. Sem hype, sem trava.
             Só o que entrega valor rápido e escala depois.
           </p>
