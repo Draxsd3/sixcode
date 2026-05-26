@@ -73,7 +73,7 @@ export function Stack() {
                   key={g.label}
                   onMouseEnter={() => setActive(i)}
                   onClick={() => setActive(i)}
-                  className={`relative text-left p-6 border-b border-border/60 last:border-b-0 lg:w-full min-w-[200px] transition-colors ${
+                  className={`relative text-left p-4 lg:p-6 border-b border-border/60 last:border-b-0 lg:w-full min-w-[160px] lg:min-w-0 shrink-0 transition-colors ${
                     isActive
                       ? "bg-primary/5"
                       : "hover:bg-surface/40"
