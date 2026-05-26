@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import heroVisual from "@/assets/hero-visual.jpg";
+import heroVisual from "@/assets/hero-visual.png";
 
 export function Hero() {
   return (
@@ -56,10 +56,10 @@ export function Hero() {
               <div className="absolute -inset-4 bg-primary/10 blur-2xl rounded-full" aria-hidden />
               <img
                 src={heroVisual}
-                alt="Visualização abstrata de tecnologia e conexões digitais"
+                alt="Diagrama isométrico SixCode conectando CRM, IA, API, automação e dashboards"
                 width={1024}
                 height={1024}
-                className="relative w-full h-auto rounded-lg border border-border bg-surface"
+                className="relative w-full h-auto"
               />
               <div className="absolute -bottom-4 -left-4 bg-background border border-border px-4 py-3 rounded-md shadow-sm hidden md:block">
                 <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
