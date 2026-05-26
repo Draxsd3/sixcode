@@ -139,8 +139,8 @@ export function About() {
                 <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
                   0{i + 1}
                 </div>
-                <div className="flex items-baseline gap-4">
-                  <span className="text-5xl md:text-6xl font-semibold tracking-tight text-foreground group-hover:text-primary transition-colors">
+                <div className="flex items-baseline gap-3 sm:gap-4 flex-wrap justify-end">
+                  <span className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-foreground group-hover:text-primary transition-colors">
                     {s.value}
                   </span>
                   <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
