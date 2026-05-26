@@ -1,5 +1,3 @@
-import aboutTeam from "@/assets/about-team.jpg";
-
 const values = [
   { title: "Soluções sob medida", desc: "Cada projeto é único e construído para resolver um problema real." },
   { title: "Código limpo", desc: "Padrões sólidos, manutenção simples e arquitetura preparada para escalar." },
@@ -21,23 +19,11 @@ export function About() {
               A SixCode nasceu para ajudar empresas a transformarem ideias em
               soluções digitais reais.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            <p className="text-muted-foreground text-lg leading-relaxed">
               Unimos desenvolvimento, automação e inteligência artificial para
               criar sistemas úteis, escaláveis e alinhados às necessidades de
               cada negócio.
             </p>
-
-            <div className="relative">
-              <div className="absolute -inset-3 bg-primary/10 blur-2xl rounded-full" aria-hidden />
-              <img
-                src={aboutTeam}
-                alt="Equipe SixCode trabalhando em uma solução de software"
-                loading="lazy"
-                width={1024}
-                height={768}
-                className="relative w-full h-auto rounded-lg border border-border object-cover aspect-[4/3]"
-              />
-            </div>
           </div>
 
           <div className="lg:col-span-7">
