@@ -4,10 +4,8 @@ import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { Solutions } from "@/components/site/Solutions";
 import { Process } from "@/components/site/Process";
-import { Differentials } from "@/components/site/Differentials";
 import { Projects } from "@/components/site/Projects";
 import { About } from "@/components/site/About";
-import { CTASection } from "@/components/site/CTASection";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
@@ -38,10 +36,8 @@ function Index() {
         <Hero />
         <Solutions />
         <Process />
-        <Differentials />
         <Projects />
         <About />
-        <CTASection />
         <Contact />
       </main>
       <Footer />

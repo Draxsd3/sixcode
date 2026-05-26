@@ -3,13 +3,14 @@ import { Mail, MessageCircle, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-background">
+    <footer className="bg-background">
       <div className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <img src={logo} alt="SixCode" className="h-14 w-auto mb-5" />
+            <img src={logo} alt="SixCode" className="h-12 w-auto mb-5" />
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
-              Desenvolvemos sistemas, automações e soluções com IA para empresas que querem escalar com tecnologia.
+              Sistemas, automações e soluções com IA sob medida para empresas
+              que querem escalar com tecnologia.
             </p>
           </div>
 
@@ -18,7 +19,7 @@ export function Footer() {
             <ul className="space-y-2.5 text-sm">
               {[
                 { href: "#solucoes", label: "Soluções" },
-                { href: "#processo", label: "Como Funciona" },
+                { href: "#processo", label: "Processo" },
                 { href: "#projetos", label: "Projetos" },
                 { href: "#sobre", label: "Sobre" },
               ].map((l) => (
@@ -34,9 +35,18 @@ export function Footer() {
           <div>
             <h4 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-4">Contato</h4>
             <ul className="space-y-2.5 text-sm text-foreground">
-              <li className="flex items-center gap-2"><Mail size={14} className="text-primary" /> contato@sixcode.com.br</li>
-              <li className="flex items-center gap-2"><MessageCircle size={14} className="text-primary" /> WhatsApp</li>
-              <li className="flex items-center gap-2"><MapPin size={14} className="text-primary" /> Brasil</li>
+              <li className="flex items-center gap-2">
+                <Mail size={14} className="text-primary" />
+                <span>contato@sixcode.com.br</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <MessageCircle size={14} className="text-primary" />
+                <span>WhatsApp</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin size={14} className="text-primary" />
+                <span>Brasil</span>
+              </li>
             </ul>
           </div>
         </div>
