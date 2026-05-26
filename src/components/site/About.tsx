@@ -104,16 +104,6 @@ export function About() {
           </svg>
         </div>
 
-
-            {/* corner badge */}
-            <div className="absolute top-4 right-4 -translate-y-1/2 translate-x-1/2 hidden md:flex">
-              <span className="bg-primary text-primary-foreground font-mono text-[9px] uppercase tracking-widest px-2 py-1 -rotate-6 shadow-lg">
-                shipped
-              </span>
-            </div>
-          </div>
-        </div>
-
         {/* MANIFESTO + STATS */}
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-20">
           <div className="lg:col-span-7">
