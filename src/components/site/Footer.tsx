@@ -1,4 +1,3 @@
-import logo from "@/assets/sixcode-logo.png";
 import { Mail, MessageCircle, MapPin } from "lucide-react";
 
 export function Footer() {
@@ -7,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-6 pt-20 pb-8">
         <div className="grid md:grid-cols-4 gap-10 mb-16">
           <div className="md:col-span-2">
-            <img src={logo} alt="SixCode" className="h-10 w-auto mb-5" />
+            <span className="font-display font-bold text-2xl tracking-tight text-foreground block mb-5">SIXCODE</span>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
               O padrão moderno para times que precisam de tecnologia sob medida.
               Sistemas, automações e IA para o seu negócio.

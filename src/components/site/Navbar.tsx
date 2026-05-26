@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/sixcode-logo.png";
 
 const links = [
   { href: "#solucoes", label: "Soluções" },
@@ -31,7 +30,7 @@ export function Navbar() {
           }`}
         >
           <a href="#inicio" className="flex items-center shrink-0">
-            <img src={logo} alt="SixCode" className="h-8 w-auto" />
+            <span className="font-display font-bold text-xl tracking-tight text-foreground">SIXCODE</span>
           </a>
 
           <nav className="hidden lg:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
