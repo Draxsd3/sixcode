@@ -12,7 +12,7 @@ export function Contact() {
     setTimeout(() => {
       setLoading(false);
       (e.target as HTMLFormElement).reset();
-      toast.success("Solicitação enviada!", {
+      toast.success("Mensagem enviada!", {
         description: "Em breve entraremos em contato.",
       });
     }, 800);
@@ -39,19 +39,19 @@ export function Contact() {
 
   return (
     <section id="contato" className="py-20 sm:py-24 lg:py-32 border-b border-border relative overflow-hidden">
-      {/* ambient glow */}
       <div className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] max-w-[120vw] h-[700px] rounded-full bg-primary/10 blur-[120px]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-5">
-            <span className="eyebrow mb-5">Contato</span>
+            <span className="eyebrow mb-5">contato</span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl mt-5 mb-6 tracking-tight">
-              Vamos conversar sobre o seu projeto
+              Conta pra gente o que você precisa
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-              Conte sobre o desafio do seu negócio. Em até 24h úteis nossa
-              equipe entra em contato com uma proposta sob medida.
+              Não precisa ter tudo definido. Escreve do seu jeito, com as suas
+              palavras. A gente entende e responde em até 24 horas com um
+              caminho claro pro seu projeto.
             </p>
 
             <div className="space-y-4 mb-10">
@@ -67,19 +67,18 @@ export function Contact() {
 
             <div className="border-t border-border pt-6 space-y-3">
               {[
-                { l: "Resposta", v: "Em até 24h úteis" },
-                { l: "Proposta", v: "Personalizada" },
-                { l: "Atendimento", v: "Consultivo" },
+                { l: "Resposta", v: "Em até 24h" },
+                { l: "Conversa", v: "Sem compromisso" },
+                { l: "Orçamento", v: "Sob medida e gratuito" },
               ].map((i) => (
                 <div key={i.l} className="flex justify-between">
-                  <span className="font-mono text-xs uppercase tracking-wider text-muted-foreground">{i.l}</span>
+                  <span className="text-xs uppercase tracking-wider text-muted-foreground">{i.l}</span>
                   <span className="text-foreground text-sm">{i.v}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* 3D form */}
           <div className="lg:col-span-7 perspective-deep">
             <div
               ref={cardRef}
@@ -93,13 +92,11 @@ export function Contact() {
                 transition: "transform 0.4s cubic-bezier(0.22, 1, 0.36, 1)",
               }}
             >
-              {/* depth layer behind */}
               <div
                 aria-hidden
                 className="absolute inset-0 rounded-2xl bg-primary/20 blur-2xl"
                 style={{ transform: "translateZ(-80px) scale(0.92)" }}
               />
-              {/* gradient border frame */}
               <div
                 aria-hidden
                 className="absolute -inset-px rounded-2xl bg-gradient-to-br from-primary/60 via-white/10 to-primary/30 opacity-70"
@@ -110,7 +107,6 @@ export function Contact() {
                 onSubmit={onSubmit}
                 className="relative rounded-2xl bg-background/80 backdrop-blur-xl border border-white/10 p-5 sm:p-8 md:p-10 space-y-5 overflow-hidden"
               >
-                {/* cursor spotlight */}
                 <div
                   aria-hidden
                   className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -120,46 +116,43 @@ export function Contact() {
                   }}
                 />
 
-
-
-
                 <div className="grid md:grid-cols-2 gap-5" style={{ transform: "translateZ(30px)" }}>
-                  <Field name="name" label="Nome" required />
-                  <Field name="company" label="Empresa" />
+                  <Field name="name" label="Seu nome" required />
+                  <Field name="company" label="Sua empresa" />
                 </div>
                 <div className="grid md:grid-cols-2 gap-5" style={{ transform: "translateZ(30px)" }}>
                   <Field name="email" label="E-mail" type="email" required />
                   <Field name="whatsapp" label="WhatsApp" />
                 </div>
                 <div style={{ transform: "translateZ(25px)" }}>
-                  <label className="block text-xs font-mono uppercase tracking-wider text-muted-foreground mb-2">
-                    Tipo de solução
+                  <label className="block text-xs uppercase tracking-wider text-muted-foreground mb-2">
+                    O que você quer resolver?
                   </label>
                   <select
                     name="type"
                     className="w-full px-4 py-3 rounded-md bg-background/60 border border-white/10 focus:border-primary focus:outline-none text-foreground transition-colors"
                     defaultValue=""
                   >
-                    <option value="" disabled>Selecione</option>
-                    <option>Sistema web</option>
-                    <option>Automação de processos</option>
-                    <option>Integração com APIs</option>
-                    <option>Inteligência Artificial</option>
-                    <option>Dashboard / BI</option>
-                    <option>Landing page</option>
-                    <option>Outro</option>
+                    <option value="" disabled>Escolha uma opção</option>
+                    <option>Quero automatizar tarefas repetitivas</option>
+                    <option>Quero atender clientes 24h (WhatsApp / IA)</option>
+                    <option>Preciso de um sistema próprio</option>
+                    <option>Quero conectar minhas ferramentas</option>
+                    <option>Quero um painel pra ver os números</option>
+                    <option>Preciso de um site novo</option>
+                    <option>Ainda não sei, quero conversar</option>
                   </select>
                 </div>
                 <div style={{ transform: "translateZ(25px)" }}>
-                  <label className="block text-xs font-mono uppercase tracking-wider text-muted-foreground mb-2">
-                    Mensagem
+                  <label className="block text-xs uppercase tracking-wider text-muted-foreground mb-2">
+                    Conta um pouco mais
                   </label>
                   <textarea
                     name="message"
                     rows={5}
                     required
                     className="w-full px-4 py-3 rounded-md bg-background/60 border border-white/10 focus:border-primary focus:outline-none text-foreground resize-none transition-colors"
-                    placeholder="Conte um pouco sobre o seu projeto..."
+                    placeholder="Escreve do seu jeito o que está pegando ou o que você quer melhorar..."
                   />
                 </div>
                 <button
@@ -168,7 +161,7 @@ export function Contact() {
                   style={{ transform: "translateZ(60px)" }}
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-all disabled:opacity-60 shadow-[0_10px_30px_-10px_oklch(0.62_0.20_295/0.6)] hover:shadow-[0_20px_50px_-10px_oklch(0.62_0.20_295/0.8)]"
                 >
-                  {loading ? "Enviando..." : "Enviar solicitação"}
+                  {loading ? "Enviando..." : "Enviar mensagem"}
                   {!loading && <ArrowRight size={16} />}
                 </button>
               </form>
@@ -193,7 +186,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-xs font-mono uppercase tracking-wider text-muted-foreground mb-2">
+      <label className="block text-xs uppercase tracking-wider text-muted-foreground mb-2">
         {label}{required && " *"}
       </label>
       <input

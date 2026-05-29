@@ -10,18 +10,18 @@ export function Footer() {
               SIXCODE
             </span>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
-              O padrão moderno para times que precisam de tecnologia sob medida.
-              Sistemas, automações e IA para o seu negócio.
+              Tecnologia sob medida para empresas que querem crescer sem
+              complicar. A gente cuida da parte técnica, você foca no negócio.
             </p>
           </div>
 
           <div>
-            <h4 className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-5">Produto</h4>
+            <h4 className="text-[10px] uppercase tracking-widest text-muted-foreground mb-5">Navegação</h4>
             <ul className="space-y-3 text-sm">
               {[
-                { href: "#solucoes", label: "Soluções" },
-                { href: "#processo", label: "Processo" },
-                { href: "#projetos", label: "Projetos" },
+                { href: "#solucoes", label: "O que fazemos" },
+                { href: "#processo", label: "Como funciona" },
+                { href: "#projetos", label: "Exemplos" },
                 { href: "#sobre", label: "Sobre" },
               ].map((l) => (
                 <li key={l.href}>
@@ -34,7 +34,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-5">Contato</h4>
+            <h4 className="text-[10px] uppercase tracking-widest text-muted-foreground mb-5">Contato</h4>
             <ul className="space-y-3 text-sm text-foreground/80">
               <li className="flex items-center gap-2">
                 <Mail size={14} className="text-primary" />
@@ -54,12 +54,12 @@ export function Footer() {
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs text-muted-foreground">
           <p>© 2026 SixCode. Todos os direitos reservados.</p>
-          <div className="flex flex-wrap items-center gap-4 font-mono">
+          <div className="flex flex-wrap items-center gap-4">
             <span className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-              Todos os sistemas OK
+              Atendendo agora
             </span>
-            <span>BR · UTC-3</span>
+            <span>Brasil</span>
           </div>
         </div>
 
