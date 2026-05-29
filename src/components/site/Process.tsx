@@ -4,38 +4,33 @@ import processVisual from "@/assets/process-visual.jpg";
 const steps = [
   {
     n: "01",
-    title: "Diagnóstico",
-    desc: "Entendemos o problema, o contexto e os objetivos do seu negócio.",
-    meta: "1–2 semanas",
-    tags: ["Discovery", "Workshops", "Análise"],
+    title: "A gente conversa",
+    desc: "Você nos conta o que está travando ou o que quer melhorar. Sem termo técnico, sem cobrança. Só uma conversa pra entender o seu negócio.",
+    meta: "Bate-papo inicial",
   },
   {
     n: "02",
-    title: "Planejamento",
-    desc: "Definimos escopo, arquitetura e roadmap da solução.",
-    meta: "1 semana",
-    tags: ["Roadmap", "Arquitetura", "Estimativas"],
+    title: "Mostramos o caminho",
+    desc: "Apresentamos uma proposta clara: o que vamos fazer, quanto tempo leva e quanto custa. Tudo no português, sem letras miúdas.",
+    meta: "Proposta sob medida",
   },
   {
     n: "03",
-    title: "Desenvolvimento",
-    desc: "Entregas iterativas com código limpo e foco em qualidade.",
-    meta: "4–12 semanas",
-    tags: ["Sprints", "Code review", "CI/CD"],
+    title: "Colocamos em prática",
+    desc: "A gente constrói a solução e te mostra o andamento toda semana. Você acompanha tudo, dá opinião e a gente ajusta junto.",
+    meta: "Entregas semanais",
   },
   {
     n: "04",
-    title: "Validação",
-    desc: "Testamos em cenários reais antes do go-live.",
-    meta: "1–2 semanas",
-    tags: ["QA", "UAT", "Performance"],
+    title: "Validamos com você",
+    desc: "Testamos tudo na prática antes de ir pro ar. Você usa, aprova e só então a gente liga a chave. Nada de surpresa.",
+    meta: "Você aprova",
   },
   {
     n: "05",
-    title: "Evolução",
-    desc: "Acompanhamento contínuo e melhoria constante.",
-    meta: "Contínuo",
-    tags: ["Suporte", "Métricas", "Iteração"],
+    title: "Continuamos do seu lado",
+    desc: "Depois do lançamento, seguimos acompanhando, ajustando e melhorando. Quando precisar, é só chamar.",
+    meta: "Suporte contínuo",
   },
 ];
 
@@ -50,15 +45,15 @@ export function Process() {
       <div className="absolute inset-0 grid-bg opacity-20 pointer-events-none" aria-hidden />
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-primary/10 blur-[140px] pointer-events-none" aria-hidden />
 
-      <div className="container relative mx-auto px-6">
+      <div className="container relative mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mb-16 lg:mb-20">
-          <span className="eyebrow mb-6">processo</span>
+          <span className="eyebrow mb-6">como funciona</span>
           <h2 className="text-4xl sm:text-5xl md:text-7xl headline-fade mt-6 mb-6 tracking-tight">
-            Como a SixCode trabalha
+            Simples do começo ao fim
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg">
-            Cinco fases, um único objetivo: entregar software que move o
-            ponteiro do seu negócio.
+            Cinco etapas claras. Sem segredos, sem enrolação, sem dor de cabeça
+            pra quem não é da área.
           </p>
         </div>
 
@@ -76,55 +71,41 @@ export function Process() {
               >
                 <img
                   src={processVisual}
-                  alt="Visualização do processo SixCode"
+                  alt="Como a SixCode trabalha"
                   width={1024}
                   height={1280}
                   loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover opacity-90"
                 />
 
-                {/* overlay grid */}
                 <div className="absolute inset-0 grid-bg opacity-30 mix-blend-overlay pointer-events-none" />
 
-                {/* corner brackets */}
                 <Bracket className="top-3 left-3" />
                 <Bracket className="top-3 right-3 rotate-90" />
                 <Bracket className="bottom-3 left-3 -rotate-90" />
                 <Bracket className="bottom-3 right-3 rotate-180" />
 
-                {/* HUD overlay */}
                 <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent">
-                  <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-3">
-                    <span>fase ativa</span>
+                  <div className="flex items-center justify-between text-xs uppercase tracking-widest text-muted-foreground mb-3">
+                    <span>etapa atual</span>
                     <span>{steps[active].meta}</span>
                   </div>
                   <div className="flex items-baseline gap-3 mb-3">
-                    <span className="font-mono text-primary text-sm tabular-nums">
+                    <span className="text-primary text-sm tabular-nums">
                       {steps[active].n}
                     </span>
                     <h3 className="text-2xl md:text-3xl tracking-tight text-foreground">
                       {steps[active].title}
                     </h3>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     {steps[active].desc}
                   </p>
-                  <div className="flex flex-wrap gap-2">
-                    {steps[active].tags.map((t) => (
-                      <span
-                        key={t}
-                        className="px-2 py-1 text-[10px] font-mono uppercase tracking-wider border border-white/10 bg-white/5 text-foreground/80 rounded-sm"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
                 </div>
               </div>
 
-              {/* progress bar */}
               <div className="mt-6 flex items-center gap-3">
-                <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                <span className="text-xs uppercase tracking-widest text-muted-foreground">
                   {String(active + 1).padStart(2, "0")} / {String(steps.length).padStart(2, "0")}
                 </span>
                 <div className="flex-1 h-px bg-white/10 relative overflow-hidden">
@@ -149,7 +130,6 @@ export function Process() {
                     onClick={() => setActive(i)}
                     className="relative pl-8 pb-10 last:pb-0 cursor-pointer group"
                   >
-                    {/* node */}
                     <span
                       className={`absolute -left-[7px] top-2 w-3 h-3 rounded-full border-2 transition-all duration-300 ${
                         isActive
@@ -164,13 +144,13 @@ export function Process() {
                       }`}
                     >
                       <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-2">
-                        <span className="font-mono text-xs text-primary tabular-nums tracking-widest">
+                        <span className="text-xs text-primary tabular-nums tracking-widest">
                           {s.n}
                         </span>
                         <h3 className="text-2xl sm:text-3xl md:text-4xl tracking-tight">
                           {s.title}
                         </h3>
-                        <span className="ml-auto font-mono text-[10px] uppercase tracking-widest text-muted-foreground hidden md:inline">
+                        <span className="ml-auto text-[10px] uppercase tracking-widest text-muted-foreground hidden md:inline">
                           {s.meta}
                         </span>
                       </div>

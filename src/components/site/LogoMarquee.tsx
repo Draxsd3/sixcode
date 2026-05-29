@@ -1,15 +1,16 @@
-const logos = [
-  "Petrobras", "Itaú", "Magalu", "Stone", "Nubank", "Vivo",
-  "iFood", "Localiza", "B3", "Ambev", "Natura", "XP",
+const segments = [
+  "Comércio", "Serviços", "Indústria", "Saúde", "Educação",
+  "Imobiliário", "Logística", "Restaurantes", "E-commerce",
+  "Consultoria", "Eventos", "Agências",
 ];
 
 export function LogoMarquee() {
   return (
-    <section className="py-20 lg:py-24 border-y border-border bg-background relative overflow-hidden">
-      <div className="container mx-auto px-6 mb-12">
+    <section className="py-16 lg:py-20 border-y border-border bg-background relative overflow-hidden">
+      <div className="container mx-auto px-6 mb-10">
         <p className="text-center text-sm text-muted-foreground max-w-2xl mx-auto">
-          Construído com as práticas dos melhores times de produto.{" "}
-          <span className="text-foreground">De startups em ascensão a grandes empresas.</span>
+          Atendemos empresas de todos os tamanhos e segmentos.{" "}
+          <span className="text-foreground">Cada negócio, uma solução sob medida.</span>
         </p>
       </div>
 
@@ -18,7 +19,7 @@ export function LogoMarquee() {
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
         <div className="marquee">
-          {[...logos, ...logos].map((l, i) => (
+          {[...segments, ...segments].map((l, i) => (
             <div
               key={`${l}-${i}`}
               className="flex items-center justify-center mx-10 shrink-0"

@@ -1,12 +1,36 @@
 import { ArrowUpRight } from "lucide-react";
 
 const projects = [
-  { tag: "CRM", title: "CRM Personalizado", desc: "Gestão completa de clientes, pipeline comercial e automação de follow-up." },
-  { tag: "Financeiro", title: "Sistema Financeiro", desc: "Controle de fluxo de caixa, contas a pagar/receber e DRE em tempo real." },
-  { tag: "IA", title: "Plataforma com IA", desc: "Atendimento e análise de dados acelerados por inteligência artificial." },
-  { tag: "Automação", title: "Automação Comercial", desc: "Fluxos automatizados conectando WhatsApp, CRM e ferramentas internas." },
-  { tag: "BI", title: "Dashboard de Indicadores", desc: "KPIs centralizados, visualização clara e decisões orientadas por dados." },
-  { tag: "SaaS", title: "Plataforma Multi-tenant", desc: "Sistema SaaS com múltiplos clientes, planos e billing integrado." },
+  {
+    tag: "Atendimento",
+    title: "Atendente virtual no WhatsApp",
+    desc: "Responde clientes na hora, qualifica leads e agenda reuniões — mesmo de madrugada e no fim de semana.",
+  },
+  {
+    tag: "Vendas",
+    title: "CRM que sua equipe usa de verdade",
+    desc: "Pipeline simples, lembretes automáticos e relatórios claros. Sem campos inúteis, sem treinamento de uma semana.",
+  },
+  {
+    tag: "Financeiro",
+    title: "Controle financeiro descomplicado",
+    desc: "Entradas, saídas e contas a pagar em um só lugar. Visão clara do caixa em qualquer dia do mês.",
+  },
+  {
+    tag: "Operação",
+    title: "Automação do dia a dia",
+    desc: "Pedidos, notas, mensagens e planilhas conectados. O que antes levava horas, passa a acontecer sozinho.",
+  },
+  {
+    tag: "Gestão",
+    title: "Painel com os números do negócio",
+    desc: "Vendas, atendimento, equipe — tudo em uma tela. Você abre, entende em 10 segundos e toma a decisão.",
+  },
+  {
+    tag: "Marca",
+    title: "Site que traz cliente",
+    desc: "Página rápida, bonita e feita pra converter visitante em contato. Conectada ao seu WhatsApp e ao seu funil.",
+  },
 ];
 
 export function Projects() {
@@ -14,12 +38,13 @@ export function Projects() {
     <section id="projetos" className="py-24 lg:py-36 border-b border-border relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mb-16 lg:mb-20">
-          <span className="eyebrow mb-6">projetos</span>
+          <span className="eyebrow mb-6">exemplos</span>
           <h2 className="text-4xl sm:text-5xl md:text-7xl headline-fade mt-6 mb-6 tracking-tight">
-            Casos de uso reais
+            Veja o que podemos fazer
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg">
-            Exemplos de soluções que a SixCode pode construir para o seu negócio.
+            Alguns exemplos práticos de soluções que a SixCode entrega para
+            empresas como a sua.
           </p>
         </div>
 
@@ -30,7 +55,7 @@ export function Projects() {
               className="tilt-card shine group relative card-surface rounded-2xl p-7 overflow-hidden cursor-pointer hover:border-primary/40 transition-all"
             >
               <div className="flex items-start justify-between mb-8">
-                <div className="font-mono text-[10px] uppercase tracking-widest text-primary px-2 py-1 rounded bg-primary/10">
+                <div className="text-[10px] uppercase tracking-widest text-primary px-2 py-1 rounded bg-primary/10">
                   {p.tag}
                 </div>
                 <ArrowUpRight

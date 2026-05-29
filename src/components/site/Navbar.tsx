@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "#solucoes", label: "Soluções" },
-  { href: "#stack", label: "Stack" },
-  { href: "#processo", label: "Processo" },
+  { href: "#solucoes", label: "O que fazemos" },
+  { href: "#processo", label: "Como funciona" },
+  { href: "#projetos", label: "Exemplos" },
+  { href: "#sobre", label: "Sobre" },
 ];
 
 export function Navbar() {
@@ -51,7 +52,7 @@ export function Navbar() {
               href="#contato"
               className="inline-flex items-center px-4 py-2 rounded-full bg-foreground text-background text-sm font-medium hover:bg-foreground/90 transition-colors"
             >
-              Solicitar proposta
+              Falar com a gente
             </a>
           </div>
 
@@ -82,7 +83,7 @@ export function Navbar() {
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex items-center justify-center px-5 py-3 rounded-full bg-foreground text-background text-sm font-medium"
               >
-                Solicitar proposta
+                Falar com a gente
               </a>
             </div>
           </div>
